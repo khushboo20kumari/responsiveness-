@@ -1,20 +1,73 @@
-// RightSidebar.js
 import React from 'react';
 import { Drawer, List, ListItem, ListItemText } from '@mui/material';
-
-const RightSidebar = () => {
+import Navbar from './Navbar';
+// import GoogleIcon from '@mui/icons-material/Google';
+const RightSideBar = () => {
   return (
     <Drawer variant="permanent" anchor="right">
-      <List>
+      <Navbar />
+      <List style={{background:"rgb(2,3,33)",color:"white",fontWeight:"bold"}}>
         <ListItem button>
-          <ListItemText primary="Right Sidebar Item 1" />
+          <ListItemText primary="Menu Highlights"></ListItemText>
         </ListItem>
         <ListItem button>
-          <ListItemText primary="Right Sidebar Item 2" />
+          <ListItemText primary="Beverage Selection" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Upcoming Events" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Social Media Feed" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Menu Highlights"></ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Customer Reviews:" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Special Offers" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Chef's Corner" />
+        </ListItem>
+
+        <ListItem button>
+          <ListItemText primary="Beverage Selection" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Upcoming Events" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Social Media Feed" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Menu Highlights"></ListItemText>
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Customer Reviews:" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Special Offers" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Chef's Corner" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Beverage Selection" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Upcoming Events" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Social Media Feed" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Menu Highlights"></ListItemText>
         </ListItem>
       </List>
     </Drawer>
   );
 };
 
-export default RightSidebar;
+export default RightSideBar;
