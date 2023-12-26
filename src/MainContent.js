@@ -324,7 +324,8 @@ const MainContent = () => {
             </Box>
             <br></br>
             <br></br>
-            <Box style={{border:"1px solid red"}}>
+            <Box>
+                <Typography style={{ fontWeight: "normal", fontSize: "30px" }}>MORE IDEAS</Typography>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Grid item xs={12} lg={3} md={4} sm={6} >
                         <Item>
@@ -362,13 +363,14 @@ const MainContent = () => {
             </Box>
             <br></br>
             <br></br>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                <Grid item xs={12} lg={12} md={12} sm={12}>
-                    <Item style={{ height: "100px" }}>
-                        dfgfd
-                    </Item>
+            <Box style={{ margin: "auto" }}>
+                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                    <Grid item xs={12} lg={12} md={12} sm={12}>
+                        <img style={{ width: "100%" }} src='https://s0.2mdn.net/simgad/5032982025838998790'></img>
+                        <Typography style={{ fontWeight: "normal", fontSize: "10px" }}>ADVERTISEMENT</Typography>
+                    </Grid>
                 </Grid>
-            </Grid>
+            </Box>
             <br></br>
             <br></br>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -378,17 +380,27 @@ const MainContent = () => {
                     </Item>
                 </Grid>
                 <Grid item xs={12} sm={6} lg={4} md={6}>
-                    <Item>
-                        <Box style={{ margin: "20px" }}>
-                            <Typography style={{ fontSize: "10px" }}>COLLECTION</Typography>
-                        </Box>
-                        <Box>
-                            <Typography style={{ fontSize: "30px", fontWeight: "bold" }}>HOW TO MAKE GARLIC BREAD</Typography>
-                        </Box>
-                        <Box>
-                            <Typography style={{ fontSize: "16px", fontWeight: "normal" }}>Looking to seriously up your garlic bread game? Try this recipe for a classic toasty loaf. It’s golden brown with crusty edges, extra-garlicky, and a little cheesy. What’s not to love?By Heather Baird</Typography>
-                        </Box>
-                    </Item>
+                    <Card sx={{ minWidth: 275 }}>
+                        <CardContent>
+                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                CoLLECTION
+                            </Typography>
+                            <Typography variant="h5" component="div" style={{ fontSize: "30px" }}>
+                                HOW TO MAKE GARLIC BREAD
+                            </Typography>
+                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+
+                            </Typography>
+                            <Typography variant="body2" style={{ fontSize: "17px", fontWeight: "normal" }}>
+                                Looking to seriously up your garlic bread game? Try this recipe for a classic toasty loaf. It’s golden brown with crusty edges, extra-garlicky, and a little cheesy. What’s not to love?By Heather Baird
+                                <br />
+                                {'"a benevolent smile"'}
+                            </Typography>
+                        </CardContent>
+                        <CardActions>
+                            <Button size="small">Learn More</Button>
+                        </CardActions>
+                    </Card>
                 </Grid>
             </Grid>
             <br></br>

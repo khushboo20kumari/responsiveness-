@@ -33,27 +33,6 @@ const LeftSidebar = () => {
   return (
     <Drawer variant="permanent" anchor="left" >
       <Navbar />
-      {/* <List>
-        <ListItem button>
-          <ListItemText primary="Left Sidebar Item 1" />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary="Left Sidebar Item 2" />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary="Left Sidebar Item 1" />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary="Left Sidebar Item 2" />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary="Left Sidebar Item 1" />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary="Left Sidebar Item 2" />
-        </ListItem>
-
-      </List> */}
       <List  style={{background:"rgb(2,3,33)",color:"white"}}>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem key={text} disablePadding>
